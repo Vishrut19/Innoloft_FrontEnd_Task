@@ -1,4 +1,4 @@
-# Innoloft_FrontEnd_Task
+# Innoloft FrontEnd Task
 
 This is my Solution to Innoloft Frontend Developer Challenge.
 
