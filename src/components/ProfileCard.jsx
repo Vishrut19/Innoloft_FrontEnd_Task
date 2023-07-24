@@ -5,7 +5,7 @@ const ProfileCard = () => {
   const product = useSelector((state) => state.product.product);
 
   return (
-    <div className="flex items-center p-4 mb-5 font-opensans">
+    <div className="flex items-center p-4 mb-5">
       <img
         src={product?.user?.profilePicture || defaultProfile}
         alt="Profile Picture"

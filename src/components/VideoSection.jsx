@@ -2,7 +2,7 @@ const VideoSection = () => {
   return (
     <div>
       <div
-        className="relative mb-3 overflow-hidden border border-gray-400 rounded font-opensans"
+        className="relative mb-3 overflow-hidden border border-gray-400 rounded"
         style={{ paddingTop: "1%" }}
       >
         <div className="p-4">

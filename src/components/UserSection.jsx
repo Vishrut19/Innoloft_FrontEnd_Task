@@ -8,7 +8,7 @@ const UserSection = () => {
   return (
     <>
       <div
-        className="p-3 mr-20 border border-gray-400 rounded font-opensans"
+        className="p-3 mr-20 border border-gray-400 rounded"
         style={{ borderColor: config?.mainColor }}
       >
         <div className="ml-3">

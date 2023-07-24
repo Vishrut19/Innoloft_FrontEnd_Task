@@ -15,7 +15,7 @@ function ProductView() {
   const config = useSelector((state) => state.config.config);
 
   return (
-    <div className="sm:ml-20 md:ml-0 font-opensans">
+    <div className="sm:ml-20 md:ml-0">
       <Breadcrumbs />
       <div className="grid grid-cols-1 gap-0 mt-3 md:grid-cols-2">
         {/* Card - 1 : Product View Card */}
@@ -36,7 +36,7 @@ function ProductView() {
             </h5>
             <div
               dangerouslySetInnerHTML={{ __html: product.description }}
-              className="px-2"
+              className="px-3 py-3 border border-gray-100 rounded-md"
             />
           </div>
         </div>

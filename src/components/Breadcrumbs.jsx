@@ -11,7 +11,7 @@ const Breadcrumbs = () => {
   };
 
   return (
-    <div className="text-sm text-[#6B7280] breadcrumbs font-opensans">
+    <div className="text-sm text-[#6B7280] breadcrumbs">
       <ul className="flex flex-wrap">
         <li className="mr-2">
           <a>

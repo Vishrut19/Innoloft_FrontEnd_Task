@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div
-      className="flex items-center justify-between w-full h-full px-4 font-opensans navbar"
+      className="flex items-center justify-between w-full h-full px-4 navbar"
       style={{ backgroundColor: config?.mainColor }}
     >
       {/* Logo */}

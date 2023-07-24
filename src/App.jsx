@@ -23,16 +23,14 @@ function App() {
   if (status === "loading" || configStatus === "loading") {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <h1 className="text-5xl text-green-600 animate-pulse font-opensans">
-          Loading......
-        </h1>
+        <h1 className="text-5xl text-green-600 animate-pulse">Loading......</h1>
       </div>
     );
   }
 
   if (status === "failed" || configStatus === "failed") {
     return (
-      <div className="text-5xl text-red-600 font-opensans animate-pulse">
+      <div className="text-5xl text-red-600 animate-pulse">
         Error loading data
       </div>
     );
@@ -41,7 +39,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="flex flex-col w-[100%] h-[100%] font-opensans">
+        <div className="flex flex-col w-[100%] h-[100%]">
           <Header className="sticky top-0" />
           <div className="grid flex-grow grid-cols-4">
             <div className="hidden h-screen col-span-1 md:block">

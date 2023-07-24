@@ -12,7 +12,6 @@ import PatentButton from "../components/PatentButton";
 import UserSection from "../components/UserSection";
 import ShimmerCard from "../components/ShimmerCard";
 import VideoSection from "../components/VideoSection";
-import DOMPurify from "dompurify";
 
 function ProductEdit({ product }) {
   const navigate = useNavigate();
@@ -44,7 +43,6 @@ function ProductEdit({ product }) {
     const selectedTrl =
       trls.find((trl) => trl.id === data.trls) || product?.trl;
     data.trl = selectedTrl;
-    data.description = DOMPurify.sanitize(data.description);
     dispatch(updateProduct(data));
     navigate("/product");
   };
@@ -86,7 +84,7 @@ function ProductEdit({ product }) {
   }
 
   return (
-    <div className="font-opensans sm:ml-20 md:ml-0">
+    <div className="sm:ml-20 md:ml-0">
       <div className="md:mt-1 md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <h2 className="text-2xl">Offer Details</h2>
@@ -138,12 +136,12 @@ function ProductEdit({ product }) {
                         height: 150,
                         menubar: false,
                         plugins: [
-                          "advlist autolink lists link image charmap print preview anchor",
+                          "advlist autolink lists link charmap print preview anchor",
                           "searchreplace visualblocks code fullscreen",
-                          "insertdatetime media table paste code help wordcount",
+                          "insertdatetime media table paste wordcount",
                         ],
                         toolbar:
-                          "undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help",
+                          "undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link unlink | removeformat",
                       }}
                     />
                   </div>
