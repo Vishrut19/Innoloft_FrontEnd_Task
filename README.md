@@ -6,7 +6,7 @@ I have tried to fulfill all the below mentioned requirements.
 
 I have also hosted the project for better understanding and accessibility
 
-Live Website Link -> https://innoloft-front-end-task.vercel.app
+[Live Website Link](https://innoloft-front-end-task.vercel.app)
 
 # For Running the Project :
 
