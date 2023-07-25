@@ -23,17 +23,14 @@ function App() {
   if (status === "loading" || configStatus === "loading") {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <h1 className="text-5xl text-green-600 animate-pulse">Loading......</h1>
+        {/* <h1 className="text-5xl text-green-600 animate-pulse">Loading......</h1> */}
+        <span className="loading loading-infinity loading-lg"></span>
       </div>
     );
   }
 
   if (status === "failed" || configStatus === "failed") {
-    return (
-      <div className="text-5xl text-red-600 animate-pulse">
-        Error loading data
-      </div>
-    );
+    return <span className="loading loading-spinner text-error"></span>;
   }
 
   return (
