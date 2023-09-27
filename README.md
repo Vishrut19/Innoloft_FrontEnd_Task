@@ -21,29 +21,6 @@ I have also hosted the project for better understanding and accessibility
    ```
 4. The project will be runnning successfully.
 
-# Instructions
-
-Please stick to the following instructions on how to submit your application:
-
-1. Read the **whole** README
-2. Create a new repository on your Github Account. _Note: The repository has to be public._
-3. Add your solution **with all requirements** to your repository
-4. Send a mail to application@innoloft.com with following information:
-   - Your Name
-   - Link to **public** accessable repository on **GitHub**
-   - How many hours it took to complete (roughly)
-
-**Please do not spend much more than 6 hours for the whole task.** This is not a hard limitation but want to respect your time since we cannot hire every applicant. Also only start with the task if you think this is something you can do in the given time frame.
-
-### Additional Information to submit a successful application
-
-- Make sure that your repository is public
-- Only an application with [all requirements](#technical-requirements) can be considered
-- Provide setup process if required
-- Copied structures or code from other applications will be completely ignored
-
-Thank you very much and have fun with the challenge!
-
 # Challenge
 
 Your task is to create a new dashboard with which you will be displaying and editing product information.
