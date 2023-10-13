@@ -2,8 +2,8 @@
 import { Editor } from "@tinymce/tinymce-react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import { updateProduct } from "../Redux/productSlice";
-import { fetchTRL } from "../Redux/trlSlice";
+import { updateProduct } from "../utils/productSlice";
+import { fetchTRL } from "../utils/trlSlice";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { RiDeleteBin6Line } from "react-icons/ri";
