@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const appId = import.meta.env.VITE_APP_ID || "1";
+const appId = import.meta.env.VITE_APP_ID || 1;
 
 export const fetchConfig = createAsyncThunk("config/fetchConfig", async () => {
   // Remove the parameter here since we will use the appId from outer scope

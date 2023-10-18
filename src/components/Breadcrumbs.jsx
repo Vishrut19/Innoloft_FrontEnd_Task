@@ -11,7 +11,7 @@ const Breadcrumbs = () => {
   };
 
   return (
-    <div className="text-sm text-[#6B7280] breadcrumbs">
+    <div className="text-sm text-[#6B7280] breadcrumbs md:flex">
       <ul className="flex flex-wrap">
         <li className="mr-2">
           <a>
@@ -22,20 +22,18 @@ const Breadcrumbs = () => {
           <a>Offers</a>
         </li>
         <li className="flex flex-wrap items-center">
-          <a className="mr-2">
-            Intelligent Finite Elements in Structural mechanics
-          </a>
-          <div className="flex justify-end mt-2 ml-auto sm:mt-0 md:mt-0">
-            <button
-              onClick={() => goToEditPage()}
-              className="px-8 py-2 text-sm font-medium text-white rounded  sm:ml-9 md:ml-[480px] mr-[31px]"
-              style={{ backgroundColor: config?.mainColor }}
-            >
-              Edit
-            </button>
-          </div>
+          <a className="mr-2">LoftOS</a>
         </li>
       </ul>
+      <div className="mt-2 ml-5 md:ml-auto md:mr-14 md:justify-end md:flex sm:justify-start sm:flex sm:mt-0 md:mt-0">
+        <button
+          onClick={() => goToEditPage()}
+          className="px-8 py-2 text-sm font-medium text-white rounded  sm:ml-9 md:ml-[480px] mr-[31px]"
+          style={{ backgroundColor: config?.mainColor }}
+        >
+          Edit
+        </button>
+      </div>
     </div>
   );
 };
