@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import CoverImage from "../assets/cover_image.png";
@@ -9,10 +10,22 @@ import Dev from "../assets/dev.svg";
 import Stratergy from "../assets/strategy.svg";
 import Clock from "../assets/clock.svg";
 import Money from "../assets/investor.svg";
+import DOMPurify from "dompurify";
 
 function ProductView() {
   const product = useSelector((state) => state.product.product);
   const config = useSelector((state) => state.config.config);
+
+  const descriptionRef = useRef(null);
+
+  useEffect(() => {
+    if (descriptionRef.current) {
+      const sanitizedDescription = DOMPurify.sanitize(
+        product?.description || ""
+      );
+      descriptionRef.current.innerHTML = sanitizedDescription;
+    }
+  }, [product?.description]);
 
   return (
     <div className="sm:ml-20 md:ml-0">
@@ -35,7 +48,7 @@ function ProductView() {
               {product?.name} ({product?.type?.name || "Software"})
             </h5>
             <div
-              dangerouslySetInnerHTML={{ __html: product.description }}
+              ref={descriptionRef}
               className="px-3 py-3 border border-gray-100 rounded-md"
             />
           </div>

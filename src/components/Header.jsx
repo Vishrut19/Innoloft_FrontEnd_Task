@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div
-      className="flex items-center justify-between w-full h-full px-4 navbar"
+      className="flex items-center justify-between w-full h-full px-4 py-2 navbar"
       style={{ backgroundColor: config?.mainColor }}
     >
       {/* Logo */}
@@ -27,7 +27,7 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search"
-            className="input input-bordered rounded-sm w-[60rem] focus:border-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-50 focus:font-bold"
+            className="input input-bordered rounded-sm w-full lg:w-[60rem] focus:border-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-50 focus:font-bold"
           />
         </div>
       </div>
@@ -65,6 +65,11 @@ const Header = () => {
             className="ml-2 hover:scale-150"
           />
         </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      <div className="md:hidden">
+        {/* Ideally, you'll want a mobile menu component here, represented by a hamburger icon or similar that expands to show the rest of the options on mobile. */}
       </div>
     </div>
   );
